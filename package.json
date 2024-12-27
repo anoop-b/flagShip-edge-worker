@@ -1,0 +1,20 @@
+{
+  "name": "worker",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "migrate": "bunx drizzle-kit migrate",
+    "generate": "bunx drizzle-kit generate"
+  },
+  "dependencies": {
+    "configcat-js-ssr": "^8.4.3",
+    "drizzle-orm": "^0.32.2",
+    "hono": "^4.6.9",
+    "launchdarkly-js-client-sdk": "^3.5.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241022.0",
+    "drizzle-kit": "^0.23.2",
+    "wrangler": "^3.84.1"
+  }
+}
